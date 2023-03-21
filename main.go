@@ -9,7 +9,7 @@ import (
 var fBotKey = flag.String("key", "", "telegram bot api key")
 var fUsers = flag.String("users", "", "telegram users ids to use this bot, like: 123:456:789")
 var fShell = flag.String("shell", "sh", "shell to run script")
-var fVerbose = flag.Bool("verbose", true, "verbose output")
+var fVerbose = flag.Bool("verbose", false, "verbose output")
 
 const cScriptsDir = "./scripts"
 const cTmpDir = "./tmp"
