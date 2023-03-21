@@ -50,7 +50,7 @@ func wrap(cmd string, f WrapFunc) tele.HandlerFunc {
 func runScript(script string, c tele.Context) error {
 	path := cScriptsDir + "/" + script
 	args := c.Args()
-	out, err := exec.Command(*fShell, append([]string{path}, args...)...).Output()
+	out, err := exec.Command(*fShell, append([]string{path}, args...)...).CombinedOutput()
 	if err != nil {
 		return c.Reply("run script failed: " + err.Error())
 	}
