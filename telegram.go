@@ -15,7 +15,7 @@ type WrapFunc func(cmd string, c tele.Context) error
 func runBot() {
 	pref := tele.Settings{
 		Token:   *fBotKey,
-		Verbose: false,
+		Verbose: *fVerbose,
 		Poller:  &tele.LongPoller{Timeout: 10 * time.Second},
 	}
 
