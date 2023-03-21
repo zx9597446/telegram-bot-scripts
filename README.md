@@ -18,4 +18,3 @@ Usage of telegram-bot-scripts
         verbose output (default true)
 
 ```
-`wget -c https://github.com/zx9597446/telegram-bot-scripts/releases/download/v0.0.1/telegram-bot-scripts && chmod +x telegram-bot-scripts`
