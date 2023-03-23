@@ -55,5 +55,5 @@ func runScript(script string, c tele.Context) error {
 		return c.Reply("run script failed: " + err.Error())
 	}
 	ret := "run script done, result:\n" + string(out)
-	return c.Reply(ret)
+	return c.Reply(ret, tele.NoPreview)
 }
